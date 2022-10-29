@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="full stack developer">
+    <meta name="keywords" content="html, css, cooding, barmaja online, developer">
+    <link rel="stylesheet" href="./css/potfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./M_icon-icons.com_60499.ico">
+
+    <title>Mohammad Alnuqeiti</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+        
+        * {
+            /* font-family: 'Fasthand', cursive; */
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* HEADER */
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(0, 32, 56);
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+        z-index: 800;}
+
+        .nav1 a {
+            padding: 0 20px;
+            font-weight: 500;
+            font-size: 1em;
+            display: inline-block;
+            color: white;
+            text-decoration-line: none ; 
+            
+        }
+        .nav1 a:hover {
+            color:#DB9203 ;
+        }
+        .nav1 {
+            margin-right: 60px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            margin-left: 35px;
+            cursor: pointer; } 
+
+        /* SECTION */
+        
+        #section {
+            padding: 150px 200px 0px 200px;
+            min-height: 100vh}
+
+        .main {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: 2fr 1fr ;
+            grid-template-rows: 100vh;
+            justify-content: space-between;}
+
+        #img-main1 {
+            width: 100%;
+            height: 100vh;
+            margin: 0%;
+            justify-content: end;
+            }
+        
+        #section h1 , h2 , .quets { font-weight: bold;}
+
+        #section h1 {
+            color: #00213a;
+            font-size: 3em;
+            margin-bottom: 10px;}
+
+        #section h2 { 
+            color: #DB9203;
+            font-size: 2em;
+            margin-bottom: 20px;}
+            
+        #section .quets {
+            color: #00213a;
+            font-size: 1.5em;
+            letter-spacing: 1px;}
+
+       #section .quets span {
+            color: #DB9203;
+        font-size: medium;}
+            
+        .main #section a:hover {
+            color: #DB9203 ;
+            transform: scale(1.1);
+            transition: 0.8s ;}
+
+        .main  #section .btn-main{
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color: #00213a;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 0.75em 1.5em;
+            border-radius: 0.5em;}
+
+        #section .ico-main i {
+            font-size: 40px;
+            color: #DB9203;
+            margin-top: 40px;
+            margin-left: 20px;}
+            
+        #section .ico-main i:hover {
+            color:  #00213a;
+            transform: scale(1.1);
+            transition: 0.8s ;}
+ 
+        
+        /* SECTION2 */
+        
+        .main2 {
+            display: grid;
+            width: 100%;
+            height: 50vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50vh;
+            justify-content: space-between;
+            background-color: #00213a;   
+        }
+        .main2 .main2-img {
+            width: 85%;
+            height: 50vh;
+           margin-left: 45px;}
+        
+        .main2 #section2 h2 {
+            color: #DB9203;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 20px;} 
+            
+        .main2 #section2 p {
+            color:  white;
+            font-size: 1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-right: 50px;  
+        }
+        .main2 #section2 .btn-main2 {
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 80px;
+            background-color: #DB9203;
+            color:#00213a;
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: 700;
+            padding: 0.75em 1.5em;
+            border-radius: 0.5em;}
+
+        .main2 #section2 .btn-main-2 {
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 20px;
+            background-color:#DB9203;
+            color: #00213a;
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: 700;
+            padding: 0.75em 1.5em;
+            border-radius: 0.5em;}
+
+        .main2 #section2 a:hover, .btn-main-2:hover {
+            color: white;
+            transform: scale(1.1);
+            transition: 0.8s ;}
+
+        .main2 #section2 .btn-main-2:hover {
+            color: white;
+            transform: scale(1.1);
+            transition: 0.8s ;}
+
+        /* SECTION6 */
+        .main5 h2 {
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+            margin: 25px;
+            color: #DB9203;
+            }
+        .main5 .container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .main5 .container .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 35px rgba(0, 32, 56, 35%);
+            padding: 10px;
+            margin: 30px;
+           
+
+        }
+        .img-card img {
+            height: 250px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .main5 .container .info-card {
+            text-align: center;}
+
+       .info-card h3 {
+            color: #DB9203;
+            font-weight: bold;
+            font-size: 1.25em;
+       }
+       .info-card p {
+            font-size: .8em;
+            color: #00213a;
+       } 
+       .project-card:hover{
+            transform: scale(1.1);
+            transition: 0.8s;
+       }
+       .link-project{
+            text-decoration: none;
+            color: #00213a;
+            font-weight: bold;
+            text-transform: uppercase;
+       }
+       .info-card .link-project:hover{
+            transition: .8s;
+            color: #DB9203;
+
+       }
+       /* FOOTER */
+       footer {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 2fr ;
+            grid-template-rows: 50vh;
+            justify-content: left;
+            background-color: #00213a;
+            padding: 30px;
+       }
+       .foot {
+            color: #DB9203;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-bottom: 30px;
+       }
+       footer div a {
+            color: white;
+            display: inline-block;
+            padding-bottom: 30px;
+            padding-right: 10px;
+            font-size: 2em ;
+       }
+       footer div a:hover {
+            color: #DB9203;
+            transform: scale(1.1);
+            transition: 0.8s;
+       }
+       footer div span {
+            color: white;
+            font-size: large;
+            font-weight: 600;
+       }
+       .input {
+            padding: 8px;
+            margin: 10px 0;
+            background-color: #f1f1f1;
+            box-sizing: border-box;
+            border: 3px solid rgb(172, 172, 172);
+            border-radius: 5px;
+            resize: none;
+
+
+      
+       }
+       .input1{
+             width: 30%;
+       }
+       .input2 {
+             width: 60%;
+       }
+       .input3 {
+            width: 60%;
+            padding: 50px 8px;
+            padding-left: 5px;
+       }
+       label {
+            color: white;
+       }
+       button {
+            padding: 10px;
+            background-color: #DB9203;
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: larger;
+            margin-left: 30px;
+       
+       }
+       button:hover {
+            color: #00213a;
+            transform: scale(1.1);
+            transition: 0.7s;
+       }
+       footer .message{
+         margin-top: 60px;
+       }
+       .message {
+            border-left: #f1f1f1;
+            border-width: 3px;
+       }
+       .vl {
+            border-left: 6px solid green;
+            height: 500px;
+            display: inline-block;}
+
+/* EDUCATION */
+        .main3 .container3{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        .main3 .container3 .education-card {
+            background-color: white;
+            border-radius: 10px;
+            /* box-shadow: 0 5px 35px rgba(0, 32, 56, 35%); */
+            padding: 10px;
+            margin: 30px;
+            border: 5px solid rgba(219, 146, 3 , 0.5);}
+
+        .info-card p  {
+            font-size: .8em;
+            color: #00213a;} 
+        .info-card h3  {
+            font-size: .8em;
+            color: #00213a;} 
+
+       /* .education-card:hover{
+            transform: scale(1.1);
+            transition: 0.8s;
+       } */
+       .main3 h2 {
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+            margin: 25px;
+            color: #DB9203;
+            }
+        .main3 .container3 .info-card {
+            text-align: center;}
+      
+    </style>
+</head>
+<body>
+    <header>
+            <img src="./icon/logo_transparent.png" alt=""class="logo">
+        <nav class="nav1">
+            <a href="#about me">ABOUT ME</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#experiance">EXPERIANCE</a>
+            <a href="#project">MY PROJECT</a>
+            <a href="#contact_me">CONTACT ME</a>
+        </nav>
+    </header>
+    <section class="main">
+        <div id="section">
+            <h1>Mohammad Ali Alnuqeiti</h1>
+            <h2>Full Stack Developer</h2>
+            <p class="quets"><em>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quos" <span>mohammed</span></em></p>
+            <a href="#contact_me" class="btn-main">Contact me</a>
+
+            <div class="ico-main">
+                <!-- <a href="https://mail.google.com/mail/u/0/#inbox" ><img src="../icon/Gmail_29991.png" alt="gmail"></a>
+                <a href="" ><img src="../icon/Phone_31105.png" alt="phone"></a>
+                <a href="https://www.linkedin.com/in/mohammad-alnuqeiti-1954b1251/" ><img src="../icon/in_linked_linkedin_media_social_icon_124259.png" alt="linked-in"></a> -->
+
+                <a href="https://mail.google.com/mail/u/0/#inbox" ><i class="fa-solid fa-envelope"></i></a>
+                <a href="" ><i class="fa-solid fa-square-phone"></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-alnuqeiti-1954b1251/" ><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MohammadAlnuqeiti" ><i class="fa-brands fa-square-github"></i></a>
+            </div>
+           
+        </div>
+        <div>
+            <img src="./icon/57f210dc-4e0e-4475-8cf8-a4477cd5fb2e.jpg"  alt="my_picture" id="img-main1">
+        </div>
+     </section>   
+   
+
+    <section class="main2" id="about me">
+        <img src="./icon/Programming-amico.png" alt="programing" class="main2-img">
+
+        <div id="section2">
+
+            <h2>About me</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque beatae, aliquid in         officiis deleniti nesciunt, provident iure rerum esse maiores odio aperiam corrupti molestias. Impedit veritatis dolor tenetur sequi esse nihil veniam ad quam hic itaque, nisi voluptates sunt exercitationem laudantium fuga assumenda labore cumque ipsa consectetur ullam dolores?</p>
+
+            
+            <a href="#contact_me" class="btn-main2">Contact me</a>    
+            <a href="#down_load_cv" class="btn-main-2">Download cv</a>
+            
+        </div>
+    </section><br>
+    <section class="main3" id="education">
+        <h2>Education</h2>
+        <div class="container3">
+            <div class="education-card">
+                <div class="img-card">
+                    <img src="./icon/download.jfif" alt="coding">
+                </div>
+                <div class="info-card">
+                    <h3>University</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="img-card">
+                    <img src="./icon/orange.png" alt="coding">
+                </div>
+                <div class="info-card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+
+                </div>
+            </div>
+    </section><br>
+    <section class="main4" style="background-color: #00213a;">
+        EXPERIANCE
+    </section><br>
+    <section class="main5" id="project">
+        <h2>My Project</h2>
+        <div class="container">
+            <div class="project-card">
+                <div class="img-card">
+                    <img src="./icon/Hand coding-pana.png" alt="coding">
+                </div>
+                <div class="info-card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="link-project">show project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="img-card">
+                    <img src="./icon/Hand coding-pana.png" alt="coding">
+                </div>
+                <div class="info-card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="link-project">show project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="img-card">
+                    <img src="./icon/Hand coding-pana.png" alt="coding">
+                </div>
+                <div class="info-card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="link-project">show project</a>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <footer class="footer" id="contact_me">
+
+        <div>
+            <h2 class="foot">
+                CONTACT ME
+            </h2>
+            <div>
+                <a href="https://mail.google.com/mail/u/0/#inbox" ><i class="fa-solid fa-envelope"></i></a>
+                <span class="text"><sup>mohammadalnuqeiti@gmail.com</sup></span> 
+            </div>
+            <div>
+                <a href="" ><i class="fa-solid fa-square-phone"></i></a>
+                <span class="text"><sup>07990356501</sup></span>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/mohammad-alnuqeiti-1954b1251/" ><i class="fa-brands fa-linkedin"></i></a>
+                <span class="text"><sup>Mohammad Alnuqeiti</sup></span>
+            </div>
+            <div>
+                <a href="https://github.com/MohammadAlnuqeiti" ><i class="fa-brands fa-square-github"></i></a>
+                <span class="text"><sup>Mohammad Alnuqeitic</sup></span>
+            </div>
+          
+        </div>
+
+        <div class="message">
+            
+            <label>First name</label>
+            <input type="text"  placeholder="First-name" class="input input1">
+            <label>Lastname</label>
+            <input type="text" placeholder="Last-name" class="input input1"><br>
+            <label>Email</label>
+            <input type="text" placeholder="Email" class="input input2"><br>
+            <label>Message</label>
+            <input type="text" placeholder="Message" class="input input3">
+            <button>Send Message</button>
+        </div>
+
+    </footer>
+
+</body>
+</html>
