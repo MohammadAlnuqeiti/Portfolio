@@ -2,13 +2,14 @@
       
         
 * {
-    /* font-family: 'Fasthand', cursive; */
+   
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* HEADER */
+
+/*------------------- HEADER -------------------*/
 
 header {
     display: flex;
@@ -31,9 +32,11 @@ header {
     text-decoration-line: none ; 
     
 }
+
 .nav1 a:hover {
     color:#DB9203 ;
 }
+
 .nav1 {
     margin-right: 60px;
 }
@@ -44,28 +47,10 @@ header {
     margin-left: 35px;
     cursor: pointer; 
 }
-/* .drop {
-    display: none;
-   
-} 
-.drop-content a {
-    color: #00213a;
-    padding: 12px 16px;
-    text-decoration: none;
-   
-}
-.drop-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-  }
-.drop:hover .drop-content {
-    display: block;
-} */
 
-/* SECTION */
+
+
+/* -------------------SECTION-------------------  */
 
 #section {
     padding: 150px 200px 0px 200px;
@@ -86,7 +71,7 @@ header {
     height: 100vh;
     margin: 0%;
     justify-content: end;
-    }
+}
 
 #section h1 , h2 , .quets { font-weight: bold;}
 
@@ -147,7 +132,7 @@ font-size: medium;
 }
 
 
-/* SECTION2 */
+/* -------------------SECTION2 ABOUT ME------------------- */
 
 .main2 {
     display: grid;
@@ -216,7 +201,7 @@ font-size: medium;
     transition: 0.8s ;
 }
 
-/* EDUCATION */
+/* -------------------EDUCATION -------------------*/
 .main3 .container3{
     display: flex;
     width: 100%;
@@ -269,7 +254,7 @@ font-size: medium;
 
 }
 
-/* EXPERIENCE */
+/* -------------------EXPERIENCE -------------------*/
 .main4 {
     background-color: #00213a;
     padding: 20px;
@@ -290,14 +275,16 @@ font-size: medium;
     margin: 30px;
     border: 4px solid rgb(219, 146, 3  );
 }
-
+div .img-card {
+    text-align: center;
+}
 .fa-briefcase {
     color: #00213a;
     font-size: 4em;
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     }
 .info-card p  {
     font-size: .8em;
@@ -322,7 +309,7 @@ font-size: medium;
     text-align: center;
 }
 
-/* SECTION5 */
+/* -------------------SECTION5 MY PROJECT------------------- */
 .main5 h2 {
     /* display: flex;
     justify-content: center; */
@@ -385,7 +372,7 @@ font-size: medium;
     color: #DB9203;
 
 }
-/* FOOTER */
+/* -------------------FOOTER ------------------- */
 footer {
     display: grid;
     width: 100%;
@@ -478,80 +465,82 @@ footer .message{
     height: 500px;
     display: inline-block;}
 
-    @media (max-width:1024px){
+/* ------------------- MEDIA QUERY ------------------- */
+
+
+/* --------------1246px-------------- */
+
+@media (max-width:1246px){
+
+        #section {
+            padding: 100px 200px 0px 200px;}
+       }
+
+
+/* --------------1024px-------------- */
+
+
+ @media (max-width:1024px){
+
         body {
             font-size: 12px;
         }
-        header {
-        height: 45px;
-      
-      }
-       
-        /* header .nav1 a {
-            padding: 0 5px;
-            font-weight: 500;
-            margin: 0 0;
-        } */
-        /* header .nav1{
-            margin-right: 2px;
-        } */
-        /* header .logo {
-            margin-left: 5px; */
-           
-        
+
+         header {
+            height: 45px;
+       }
+
         .main #section {
             padding: 75px 45px 0px 45px;
-            min-height:50vh;}
+            min-height:50vh;
+        }
 
         .main {width: 100%;
             height: 50vh;
             grid-template-columns: 2fr 1fr;
-            grid-template-rows: 50vh;}
+            grid-template-rows: 50vh;
+        }
 
         .main #section .btn-main {
             margin-top:10px;
             font-size: 1em;
             font-weight: 500;
             padding: 8px 15px;
-            border-radius: 5px;}
+            border-radius: 5px;
+        }
         #section .ico-main i {
             font-size: 1.5em;
             color: #DB9203;
             margin-top: 20px;
-            padding: 4px;}
-                
+            padding: 4px;
+        }        
         #section h2 {
-                    font-size: 1.5em;
-                }              
+            font-size: 1.5em;
+        }              
         #section .quets {
-                    font-size: 1em;
-                }              
+            font-size: 1em;
+        }              
         #section h1 {
-                    font-size: 2.5em;
-                }              
-      
+            font-size: 2.5em;
+        }              
         #img-main1 {
             height: 50vh;
             width: 100%;
             margin-left: 0px;   
         } 
-        
-      
         .main2 {
-        display: grid;
-        width: 100%;
-        height: 50vh;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 50vh ;
-        justify-content: space-between;
-        background-color: #00213a;   
-    }
-    
-
-    .main2 #section2 p   {
-        margin-left: 20px;
-    }
-        
+            display: grid;
+            width: 100%;
+            height: 50vh;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 50vh ;
+            justify-content: space-between;
+            background-color: #00213a;   
+         }
+        .main2 #section2 p   {
+            margin-left: 20px;
+            font-size: 1.25em;
+         }
         .main2 #section2 .btn-main2{
             margin-left: 130px;
         }
@@ -559,51 +548,42 @@ footer .message{
             margin-left: 0;
         }
         #section .quets span{
-                font-size: 1em;
-            }
-            div .img-card {
-                margin-right: 50px;
-            }
-          
-            
-            footer {
-                padding: 10px;
-                grid-template-rows: 65vh;
-            }}
-            /* @media (max-width:912px){
-            .main2 {
-                display: grid;
-                width: 100%;
-                height: 25vh;
-                grid-template-columns: 1fr 2fr;
-                grid-template-rows: 25vh;}
-                .main2 .main2-img {
-                    height: 25vh;
-                } */
+            font-size: 1em;
+        }
+        footer {
+            padding: 10px;
+            grid-template-rows: 65vh;
+        }
+        }
+
+/* --------------920px-------------- */
     
 @media (max-width:920px){
-    .main2 {
-        height: 25vh;
-        grid-template-rows: 25vh;
-    }
-    .main2 .main2-img {
-        height: 25vh;
-    }
-    footer {
-        grid-template-rows: 36vh;
-    }
-    footer div a {
-        padding-right: 3px;
-    }
-    .main2 #section2 p {
-        font-size: 1.25em;
-    }
+
+        .main2 {
+            height: 50vh;
+            grid-template-rows: 50vh;
+        }
+        .main2 .main2-img {
+            height: 50vh;
+        }
+        footer {
+            grid-template-rows: 65vh;
+        }
+        footer div a {
+            padding-right: 3px;
+        }
+        .main2 #section2 p {
+            font-size: 1.25em;
+        }
+        }
 
    
-    
-}
+ /* --------------768px-------------- */
+
 @media (max-width:768px){
- footer {
+
+        footer {
             grid-template-columns: 1fr;
             grid-template-rows: 50vh 60vh;
         }
@@ -615,26 +595,34 @@ footer .message{
             font-weight: 500;
             margin: 0 3px;
         } 
-         header .nav1{
+        header .nav1{
             margin-right: 2px;
         } 
         header .logo {
             margin-left: 5px; 
-
-}
-   .p1 {
+        }
+        .p1 {
             border-right-style: none; 
             border-bottom-style:solid ;
             border-bottom-color: white;}
-            .main2 #section2 .btn-main2 {
-                margin-left: 20px;
-            } 
-            .main2 #section2 p {
-                font-size: 1em;
-            }
-}
+        .main2 #section2 .btn-main2 {
+            margin-left: 20px;
+        } 
+        .main2 #section2 p {
+            font-size: 1em;
+        }
+        .main2 {
+            height: 35vh;
+            grid-template-rows: 35vh;
+        }
+        .main2 .main2-img {
+            height: 35vh;
+        }
+        }
 
-    @media (max-width:541px) {
+/* --------------541px-------------- */
+  
+@media (max-width:541px) {
         .main2 {
             height: 40vh;
             grid-template-rows: 40vh;
@@ -645,47 +633,45 @@ footer .message{
         }
         .main #section {
             padding: 60px 45px 0px 45px;
-
-    }
-    footer i {
+        }
+        footer i {
         margin-left: 20px;
-    }
-}
+        }
+        }
 
-    @media (max-width:530px) {
+
+ /* --------------530px-------------- */
+
+
+@media (max-width:530px) {
         body {
             font-size: 11px;
         }
-        /* header .logo{
-            margin-left: 0;
-            height: 50px;
-            width: 50px;
-        } */
         header .nav1 a {
             font-weight: 600;
             padding: 1px;
         }
         .main2 #section2 .btn-main2{
-            margin-left: 50px;}
-            #section .quets span{
-                font-size: 1em;
+            margin-left: 50px;
+        }
+        #section .quets span{
+            font-size: 1em;
             }
-            footer .message {
-                margin-left: 0;
+        footer .message {
+            margin-left: 0;
             }
-            footer div span{
-            font-size: 1.25em;
+        footer div span{
+        font-size: 1.25em;
         }
         .main #section {
             padding: 75px 30px 0px 15px;
-
-    }
-    .main {
-        height: 45vh;
-        grid-template-rows: 45vh;}
-        #img-main1 {
+        }
+        .main {
             height: 45vh;
-               
+            grid-template-rows: 45vh;
+        }
+        #img-main1 {
+            height: 45vh;      
         } 
         .main2 #section2 .btn-main2 {
             padding: 10px 17px;
@@ -695,16 +681,18 @@ footer .message{
         .main2 #section2 .btn-main-2 {
             padding: 10px 15px;
         }
-        
         .main2 #section2 p {
             padding-right: 5px;}
-            .main2 .main2-img{
-                margin-left: 5px;
-                width: 100%;
-            }
 
-}
-    @media (max-width:480px) {
+        .main2 .main2-img{
+            margin-left: 5px;
+            width: 95%;
+        }
+        }
+
+/* --------------480px-------------- */
+
+@media (max-width:480px) {
       
         .main2 #section2 .btn-main2 {
             margin-left: 30px;
@@ -720,10 +708,9 @@ footer .message{
             height: 60vh;
             grid-template-columns: 1fr;
             grid-template-rows: 30vh 30vh;
-
         }
         .main2 #section2 p {
-            font-size: 1.25em;
+            font-size: 1em;
         }
         .main2 .main2-img {
             height: 30vh;
@@ -733,7 +720,6 @@ footer .message{
         }
         .nav1 a{
             font-size: 1em;
-        
         }
         header .nav1 {
             margin-right: 16px;
@@ -747,81 +733,189 @@ footer .message{
         footer {
             grid-template-rows: 50vh 70vh;
         }
-    }
-    @media (max-width:415px) {
+        .container3 .info-card p{
+            font-size: 1.5em;
+        }
+        .info-card h3 {
+            font-size: 1.7em;
+        }
+        .info-card p {
+            font-size: 1.25em;
+        }
+        .link-project {
+            font-size: 1.25em;
+        }
+
+
+        }
+
+ /* --------------415px-------------- */
+
+@media (max-width:415px) {
         .nav1 a{
             font-size: 1em;
-    }
-    header .nav1 {
-        margin-right: 10px;
-    }
-    
-    }
-    @media (max-width:395px) {
+        }
+        header .nav1 {
+            margin-right: 7px;
+        }
+        }
+
+/* --------------410px-------------- */
+
+@media (max-width:410px) {
         .nav1 a{
-            font-size: 0.7em;
-    }
-    header .nav1 {
-        margin-right: 15px;
-    }
-    .main #section {
-        padding: 40px 30px 0px 15px
-}
-    }
-    @media (max-width:281px) {
+            font-size: 0.8em;
+        }
+        header .nav1 {
+            margin-right: 15px;
+        }
+        .main #section {
+            padding: 40px 30px 0px 15px
+        }
+        }
+
+ /* --------------250px TO 320px-------------- */
+
+@media (min-width:250px) and (max-width: 320px){
+        
+        .main2 #section2 p {
+            font-size: 0.9em;
+            margin-left: 2px;
+        }
+        header .nav1 a {
+            font-size: 0.6em;
+        }
+        #section h1 {
+            font-size: 2em;
+        }
+        #section h2 {
+            font-size: 1.25em;
+        }
+        #section .ico-main i {
+            margin-top: 8px;
+        }
+        footer {
+            grid-template-rows: 50vh 77vh;
+        }
+        .main2 {
+            height: 65vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30vh 35vh;
+        }
+        }
+
+/* --------------281px-------------- */
+
+@media (max-width:281px) {
+
         #section h1 {
            font-size: 1.5em;
-    }
+        }
         #section h2 {
            font-size: 1em;
-    }
-    #section .quets {
-        font-size: 0.9em;
-    }
-    .main #section .btn-main {
-        margin-top: 15px;
-        font-size: 1em;
-        font-weight: 400;
-        padding: 6px 11px;
-        border-radius: 5px;
+        }
+        #section .quets {
+            font-size: 0.9em;
+        }
+        .main #section .btn-main {
+            margin-top: 15px;
+            font-size: 1em;
+            font-weight: 400;
+            padding: 6px 11px;
+            border-radius: 5px;
+        }
+        #section .ico-main i{
+            padding: 3px;
+        }
+        header .nav1 a {
+            font-size: 0.6em;
+        }
+        header .logo {
+            height: 30px;
+            width: 30px;
+        }
+        header {
+            height: 30px;
+        }
+        .img-card img {
+            height: 200px;
+            width: 200px;
+        }
+        .main2 {
+            height: 65vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30vh 35vh;
+        }
+        .nodrop {
+            display: none;
+        }
+        .drop {
+            display: contents;
+        }
+        header {
+            justify-content: space-evenly;
+        }
+        }
 
-    }
-    #section .ico-main i{
-        padding: 3px;
-    }
-    header .nav1 a {
-        font-size: 0.6em;
-    }
-    header .logo {
-        height: 30px;
-        width: 30px;
-    }
-    header {
-        height: 30px;
-    }
-    .img-card img {
-        height: 230px;
-        width: 230px;
-    }
-    .main2 {
-        height: 65vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 30vh 35vh;}
-   
-/* .nodrop {
-    display: none;
-}
-.drop {
-    display: contents;
-    
-}
-header {
-    justify-content: space-evenly;
-} */
-    }
-    @media screen and (max-width:395px)and(max-width:413px){
+ /* --------------395px TO 413px-------------- */
+
+@media screen and (max-width:395px)and(max-width:413px){
         footer {
-            grid-template-rows: 35vh 35vh ;       }
+            grid-template-rows: 35vh 35vh ;       
+        }
+        }
 
-    }
+ /* --------------400px TO 720px-------------- */
 
+ @media (min-width:400px) and (max-width: 720px){
+
+        .main #section {
+            padding: 60px 45px 0px 45px;
+            min-height:50vh;}
+        #section h2 {
+            font-size: 1.25em;
+        }
+        #section h1 {
+            font-size: 2em;
+        }
+        }
+
+/* --------------819px TO 913px-------------- */
+
+@media (min-width:819px) and (max-width: 913px){
+        .nav1 a {
+            padding: 0px 16px;
+            font-size: 1.25em;
+        }
+        #section h1 {
+            font-size: 3.5em;
+        }
+        #section h2 {
+            font-size: 2.5em;
+        }    
+        #section .quets {
+            font-size: 1.5em;
+        }
+        .main #section .btn-main {
+            margin-top: 45px;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        #section .ico-main i{
+            font-size: 2em;
+            margin-top:25px;
+            padding-right: 10px;
+        }
+        .main2 {
+            height: 28vh;
+            grid-template-rows: 28vh;
+        }
+        .main2 .main2-img {
+            height: 28vh;
+        }
+        footer {
+            grid-template-rows: 37vh;
+        }
+        }
+        
+/* ---------------------THANK YOU--------------------- */
