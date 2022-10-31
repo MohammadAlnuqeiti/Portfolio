@@ -63,7 +63,7 @@ header {
 .dropbtn {
     background-color: #DB9203;
     color: white;
-    padding: 3px;
+    padding: 5px;
     font-size: 0.9em;
     border: none;
     border-radius: 2px;
@@ -203,7 +203,7 @@ font-size: medium;
     letter-spacing: 1px;
     padding-right: 50px;  
 }
-.main2 #section2 .btn-main2 {
+/* .main2 #section2 .btn-main2 {
     display: inline-block;
     margin-top: 30px;
     margin-left: 80px;
@@ -214,9 +214,9 @@ font-size: medium;
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 8px;
-}
+} */
 
-.main2 #section2 .btn-main-2 {
+/* .main2 #section2 .btn-main-2 {
     display: inline-block;
     margin-top: 30px;
     margin-left: 20px;
@@ -227,19 +227,19 @@ font-size: medium;
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 8px;
-}
+} */
 
-.main2 #section2 a:hover, .btn-main-2:hover {
+/* .main2 #section2 a:hover, .btn-main-2:hover {
     color: white;
     transform: scale(1.1);
     transition: 0.8s ;
-}
+} */
 
-.main2 #section2 .btn-main-2:hover {
+/* .main2 #section2 .btn-main-2:hover {
     color: white;
     transform: scale(1.1);
     transition: 0.8s ;
-}
+} */
 
 /* -------------------EDUCATION -------------------*/
 .main3 .container3{
@@ -247,20 +247,15 @@ font-size: medium;
     width: 100%;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 .main3 .container3 .education-card {
     background-color: white;
     border-radius: 10px;
-    /* box-shadow: 0 5px 35px rgba(0, 32, 56, 35%); */
     padding: 10px;
     margin: 30px;
-    border: 5px solid rgba(219, 146, 3 , 0.5);
-   
+    border: 5px solid rgba(219, 146, 3 , 0.5);  
 }
-
-
 .container3 .info-card p  {
     font-size: 1em;
     color: #00213a;
@@ -270,14 +265,7 @@ font-size: medium;
     padding-top: 5px;
     color: rgb(0, 33, 58);
 } 
-
-/* .education-card:hover{
-    transform: scale(1.1);
-    transition: 0.8s;
-} */
 .main3 h2 {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     font-weight: bold;
     font-size: 2.5em;
@@ -291,7 +279,6 @@ font-size: medium;
     width: 250px;
     height: 250px;
     border-radius: 10px;
-
 }
 
 /* -------------------EXPERIENCE -------------------*/
@@ -304,13 +291,11 @@ font-size: medium;
     width: 100%;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 .main4 .container4 .experiance-card {
     background-color: white;
     border-radius: 10px;
-    /* box-shadow: 0 5px 35px rgba(219, 146, 3, 35%); */
     padding: 10px;
     margin: 30px;
     border: 4px solid rgb(219, 146, 3  );
@@ -324,8 +309,7 @@ div .img-card {
     text-align: center;
     display: flex;
     justify-content: center;
-    /* margin-left: 55px; */
-    }
+}
 .info-card p  {
     font-size: .8em;
     color:#00213a;
@@ -334,17 +318,13 @@ div .img-card {
     font-size: 1em;
     color:#00213a ;
 } 
-
 .main4 h2 {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     font-weight: bold;
     font-size: 2em;
     margin: 25px;
-    color: #DB9203;
-    
-    }
+    color: #DB9203;    
+}
 .main4 .container4 .info-card {
     text-align: center;
 }
@@ -354,8 +334,6 @@ div .img-card {
 
 /* -------------------SECTION5 MY PROJECT------------------- */
 .main5 h2 {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -386,7 +364,6 @@ div .img-card {
     display: flex;
     justify-content: center;
     border-radius: 8px;
-
 }
 .main5 .container .info-card {
     text-align: center;
@@ -460,10 +437,11 @@ footer div span {
     box-sizing: border-box;
     border: 3px solid #acacac;
     border-radius: 5px;
-    resize: none;}
+    resize: none;
+}
 table {
     margin-left: 20px;
-     }
+}
 .input1{
     width: 100%;
 }
@@ -486,7 +464,6 @@ button {
     font-weight: 600;
     font-size: larger;
     margin-left: 30px;
-
 }
 button:hover {
     color: #00213a;
@@ -507,7 +484,8 @@ footer .message{
 .vl {
     border-left: 6px solid green;
     height: 500px;
-    display: inline-block;}
+    display: inline-block;
+}
 
 /* ------------------- MEDIA QUERY ------------------- */
 
@@ -585,9 +563,9 @@ footer .message{
             margin-left: 20px;
             font-size: 1.25em;
          }
-        .main2 #section2 .btn-main2{
+        /* .main2 #section2 .btn-main2{
             margin-left: 130px;
-        }
+        } */
         table {
             margin-left: 0;
         }
@@ -623,7 +601,7 @@ footer .message{
         }
 
    
- /* --------------768px-------------- */
+/* --------------768px-------------- */
 
 @media (max-width:768px){
 
@@ -649,9 +627,9 @@ footer .message{
             border-right-style: none; 
             border-bottom-style:solid ;
             border-bottom-color: white;}
-        .main2 #section2 .btn-main2 {
+        /* .main2 #section2 .btn-main2 {
             margin-left: 20px;
-        } 
+        }  */
         .main2 #section2 p {
             font-size: 1em;
         }
@@ -739,9 +717,9 @@ footer .message{
 
 @media (max-width:480px) {
       
-        .main2 #section2 .btn-main2 {
+        /* .main2 #section2 .btn-main2 {
             margin-left: 30px;
-        }
+        } */
         body {
             font-size: 10px;
         }
@@ -928,7 +906,7 @@ footer .message{
 
 /* --------------819px TO 913px-------------- */
 
-@media (min-width:819px) and (max-width: 913px){
+@media (min-width:767px) and (max-width: 913px){
         .nav1 a {
             padding: 0px 16px;
             font-size: 1.25em;
@@ -981,9 +959,16 @@ footer .message{
         }
         .main3 .container3 .info-card p { 
             font-size: 1.25em;
-
+        }
         }
 
+/* --------------779px TO 921px-------------- */
+
+@media (min-width:779px) and (max-width: 921px){
+
+        footer div span {
+            font-size: 1.25em;
+        }  
         }
-        
+
 /* ---------------------THANK YOU--------------------- */
