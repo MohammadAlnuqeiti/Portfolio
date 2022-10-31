@@ -22,6 +22,10 @@ header {
     position: fixed;
     z-index: 800;
 }
+#phone:target {
+    color:#DB9203;
+    -webkit-transition: all 1s linear;
+ }
 
 .nav1 a {
     padding: 0 20px;
@@ -47,6 +51,42 @@ header {
     margin-left: 35px;
     cursor: pointer; 
 }
+.dropdown {
+    display: none;
+}
+.dropdown .drop-content a {
+    color: #00213a ;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+.dropbtn {
+    background-color: #DB9203;
+    color: white;
+    padding: 3px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .drop-content {display: block;} 
+
+.dropbtn:hover {
+    transform: none;
+}
+.drop-content a:hover {background-color: #ddd;}
+
+
+  
 
 
 
@@ -308,6 +348,9 @@ div .img-card {
 .main4 .container4 .info-card {
     text-align: center;
 }
+.aqaba-doctor{
+    background-color: #00213a;
+}
 
 /* -------------------SECTION5 MY PROJECT------------------- */
 .main5 h2 {
@@ -318,7 +361,7 @@ div .img-card {
     font-size: 2em;
     margin: 25px;
     color: #DB9203;
-    }
+}
 .main5 .container{
     display: flex;
     width: 100%;
@@ -326,15 +369,16 @@ div .img-card {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 .main5 .container .project-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 35px rgba(0, 32, 56, 35%);
     padding: 10px;
     margin: 30px;
-   
-
+}
+.project-card .img-card {
+    display: flex;
+    justify-content: center;
 }
 .img-card img {
     height: 275px;
@@ -612,11 +656,12 @@ footer .message{
             font-size: 1em;
         }
         .main2 {
-            height: 35vh;
-            grid-template-rows: 35vh;
+            height: 40vh;
+            grid-template-rows: 40vh;
         }
         .main2 .main2-img {
-            height: 35vh;
+            height: 40vh;
+            margin-left: 25px;
         }
         }
 
@@ -705,9 +750,9 @@ footer .message{
             width: 50px;
         }
         .main2 {
-            height: 60vh;
+            height: 62vh;
             grid-template-columns: 1fr;
-            grid-template-rows: 30vh 30vh;
+            grid-template-rows: 30vh 32vh;
         }
         .main2 #section2 p {
             font-size: 1em;
@@ -779,7 +824,7 @@ footer .message{
 @media (min-width:250px) and (max-width: 320px){
         
         .main2 #section2 p {
-            font-size: 0.9em;
+            font-size: 0.8em;
             margin-left: 2px;
         }
         header .nav1 a {
@@ -846,15 +891,16 @@ footer .message{
             grid-template-columns: 1fr;
             grid-template-rows: 30vh 35vh;
         }
-        .nodrop {
+        header {
+            justify-content: space-between;
+        }
+        .no-dropdown {
             display: none;
         }
-        .drop {
-            display: contents;
-        }
-        header {
-            justify-content: space-evenly;
-        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }    
         }
 
  /* --------------395px TO 413px-------------- */
@@ -916,6 +962,28 @@ footer .message{
         footer {
             grid-template-rows: 37vh;
         }
+        }
+
+/* --------------767px TO 913px-------------- */
+
+@media (min-width:767px) and (max-width: 913px){
+        .info-card h3 {
+            font-size: 1.7em;
+        }
+        .experiance-card .info-card p {
+            font-size: 1.25em;
+        }
+        .container .info-card p {
+            font-size: 1.25em;
+        }
+        .link-project {
+            font-size: 1.25em;
+        }
+        .main3 .container3 .info-card p { 
+            font-size: 1.25em;
+
+        }
+
         }
         
 /* ---------------------THANK YOU--------------------- */
