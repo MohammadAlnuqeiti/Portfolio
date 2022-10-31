@@ -11,6 +11,7 @@
 
 /*------------------- HEADER -------------------*/
 
+
 header {
     display: flex;
     width: 100%;
@@ -26,17 +27,14 @@ header {
     color:#DB9203;
     -webkit-transition: all 1s linear;
  }
-
 .nav1 a {
     padding: 0 20px;
     font-weight: 500;
     font-size: 1em;
     display: inline-block;
     color: white;
-    text-decoration-line: none ; 
-    
+    text-decoration-line: none ;    
 }
-
 .nav1 a:hover {
     color:#DB9203 ;
 }
@@ -86,17 +84,13 @@ header {
 .drop-content a:hover {background-color: #ddd;}
 
 
-  
-
-
-
 /* -------------------SECTION-------------------  */
+
 
 #section {
     padding: 150px 200px 0px 200px;
     min-height: 100vh;
 }
-
 .main {
     display: grid;
     width: 100%;
@@ -105,14 +99,12 @@ header {
     grid-template-rows: 100vh;
     justify-content: space-between;
 }
-
 #img-main1 {
     width: 100%;
     height: 100vh;
     margin: 0%;
     justify-content: end;
 }
-
 #section h1 , h2 , .quets { font-weight: bold;}
 
 #section h1 {
@@ -147,7 +139,6 @@ font-size: medium;
 .main  #section .btn-main{
     display: inline-block;
     margin-top: 50px;
-    /* margin-left: 20px; */
     background-color: #00213a;
     color: white;
     text-decoration: none;
@@ -162,7 +153,6 @@ font-size: medium;
     color: #DB9203;
     margin-top: 40px;
     padding-right: 20px;
-    /* margin-left: 20px; */
 }
     
 #section .ico-main i:hover {
@@ -203,45 +193,9 @@ font-size: medium;
     letter-spacing: 1px;
     padding-right: 50px;  
 }
-/* .main2 #section2 .btn-main2 {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 80px;
-    background-color: #DB9203;
-    color:#00213a;
-    text-decoration: none;
-    font-size: 1.25em;
-    font-weight: 700;
-    padding: 12px 24px;
-    border-radius: 8px;
-} */
-
-/* .main2 #section2 .btn-main-2 {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 20px;
-    background-color:#DB9203;
-    color: #00213a;
-    text-decoration: none;
-    font-size: 1.25em;
-    font-weight: 700;
-    padding: 12px 24px;
-    border-radius: 8px;
-} */
-
-/* .main2 #section2 a:hover, .btn-main-2:hover {
-    color: white;
-    transform: scale(1.1);
-    transition: 0.8s ;
-} */
-
-/* .main2 #section2 .btn-main-2:hover {
-    color: white;
-    transform: scale(1.1);
-    transition: 0.8s ;
-} */
 
 /* -------------------EDUCATION -------------------*/
+
 .main3 .container3{
     display: flex;
     width: 100%;
@@ -507,22 +461,18 @@ footer .message{
         body {
             font-size: 12px;
         }
-
          header {
             height: 45px;
        }
-
         .main #section {
             padding: 75px 45px 0px 45px;
             min-height:50vh;
         }
-
         .main {width: 100%;
             height: 50vh;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 50vh;
         }
-
         .main #section .btn-main {
             margin-top:10px;
             font-size: 1em;
@@ -563,9 +513,6 @@ footer .message{
             margin-left: 20px;
             font-size: 1.25em;
          }
-        /* .main2 #section2 .btn-main2{
-            margin-left: 130px;
-        } */
         table {
             margin-left: 0;
         }
@@ -626,10 +573,8 @@ footer .message{
         .p1 {
             border-right-style: none; 
             border-bottom-style:solid ;
-            border-bottom-color: white;}
-        /* .main2 #section2 .btn-main2 {
-            margin-left: 20px;
-        }  */
+            border-bottom-color: white;
+        }
         .main2 #section2 p {
             font-size: 1em;
         }
@@ -717,9 +662,6 @@ footer .message{
 
 @media (max-width:480px) {
       
-        /* .main2 #section2 .btn-main2 {
-            margin-left: 30px;
-        } */
         body {
             font-size: 10px;
         }
