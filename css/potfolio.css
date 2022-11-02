@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       
         
@@ -11,22 +12,18 @@
 
 /*------------------- HEADER -------------------*/
 
-
 header {
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 65px;
     background-color: rgb(0, 32, 56);
     color: white;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 800;
+    z-index: 10;
 }
-#phone:target {
-    color:#DB9203;
-    -webkit-transition: all 1s linear;
- }
+
 .nav1 a {
     padding: 0 20px;
     font-weight: 500;
@@ -44,8 +41,8 @@ header {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     margin-left: 35px;
     cursor: pointer; 
 }
@@ -66,6 +63,7 @@ header {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    margin-right: 20px;
 }
 .drop-content {
     display: none;
@@ -75,7 +73,6 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown:hover .drop-content {display: block;} 
 
 .dropbtn:hover {
@@ -127,7 +124,7 @@ header {
 
 #section .quets span {
     color: #DB9203;
-font-size: medium;
+    font-size: medium;
 }
     
 .main #section a:hover {
@@ -147,6 +144,10 @@ font-size: medium;
     padding: 12px 24px;
     border-radius: 8px;
 }
+#phone:target {
+    color:#DB9203;
+    -webkit-transition: all 1s linear;
+ }
 
 #section .ico-main i {
     font-size: 2.25em;
@@ -167,15 +168,15 @@ font-size: medium;
 .main2 {
     display: grid;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
+    grid-template-rows: 60vh;
     justify-content: space-between;
     background-color: #00213a;   
 }
 .main2 .main2-img {
     width: 85%;
-    height: 50vh;
+    height: 60vh;
    margin-left: 45px;
 }
 
@@ -188,7 +189,7 @@ font-size: medium;
     
 .main2 #section2 p {
     color:  white;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
     letter-spacing: 1px;
     padding-right: 50px;  
@@ -209,6 +210,7 @@ font-size: medium;
     padding: 10px;
     margin: 30px;
     border: 5px solid rgba(219, 146, 3 , 0.5);  
+   
 }
 .container3 .info-card p  {
     font-size: 1em;
@@ -229,10 +231,13 @@ font-size: medium;
 .main3 .container3 .info-card {
     text-align: center;
 }
-.main3 img {
-    width: 250px;
-    height: 250px;
+.main3 .education-card img {
+    width: 270px;
+    height: 270px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 /* -------------------EXPERIENCE -------------------*/
@@ -259,7 +264,7 @@ div .img-card {
 }
 .fa-briefcase {
     color: #00213a;
-    font-size: 4em;
+    font-size: 4.5em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -351,7 +356,7 @@ div .img-card {
 footer {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 1.5fr ;
     grid-template-rows: 55vh;
     justify-content: left;
     background-color: #00213a;
@@ -395,6 +400,7 @@ footer div span {
 }
 table {
     margin-left: 20px;
+    width: 80%;
 }
 .input1{
     width: 100%;
@@ -417,7 +423,7 @@ button {
     border-radius: 5px;
     font-weight: 600;
     font-size: larger;
-    margin-left: 30px;
+    margin-left: 40%;
 }
 button:hover {
     color: #00213a;
@@ -430,16 +436,13 @@ footer .message{
 .message {
     border-left: #f1f1f1;
     border-width: 3px;
+    margin-left: 60px;
 }
 .message #none {
     display: none;
 }
 
-.vl {
-    border-left: 6px solid green;
-    height: 500px;
-    display: inline-block;
-}
+
 
 /* ------------------- MEDIA QUERY ------------------- */
 
@@ -503,9 +506,9 @@ footer .message{
         .main2 {
             display: grid;
             width: 100%;
-            height: 50vh;
+            height: 60vh;
             grid-template-columns: 1fr 2fr;
-            grid-template-rows: 50vh ;
+            grid-template-rows: 60vh ;
             justify-content: space-between;
             background-color: #00213a;   
          }
@@ -710,6 +713,16 @@ footer .message{
         .link-project {
             font-size: 1.25em;
         }
+        .no-dropdown {
+            display: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            margin-right: 50px;
+        }    
 
 
         }
@@ -722,6 +735,9 @@ footer .message{
         }
         header .nav1 {
             margin-right: 7px;
+        }
+        table {
+            margin-left: 37px;
         }
         }
 
@@ -814,13 +830,7 @@ footer .message{
         header {
             justify-content: space-between;
         }
-        .no-dropdown {
-            display: none;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }    
+       
         }
 
  /* --------------395px TO 413px-------------- */
