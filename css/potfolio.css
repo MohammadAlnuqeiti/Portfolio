@@ -175,9 +175,9 @@ header {
     background-color: #00213a;   
 }
 .main2 .main2-img {
-    width: 85%;
+    width: 75%;
     height: 60vh;
-   margin-left: 45px;
+   margin-left: 75px;
 }
 
 .main2 #section2 h2 {
@@ -192,7 +192,8 @@ header {
     font-size: 1.25em;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-right: 50px;  
+    padding-right: 50px;
+  
 }
 
 /* -------------------EDUCATION -------------------*/
@@ -644,20 +645,12 @@ footer .message{
         #img-main1 {
             height: 45vh;      
         } 
-        .main2 #section2 .btn-main2 {
-            padding: 10px 17px;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .main2 #section2 .btn-main-2 {
-            padding: 10px 15px;
-        }
         .main2 #section2 p {
             padding-right: 5px;}
 
         .main2 .main2-img{
-            margin-left: 5px;
-            width: 95%;
+            margin-left: 32px;
+            width: 80%;
         }
         }
 
@@ -830,6 +823,11 @@ footer .message{
         header {
             justify-content: space-between;
         }
+        .main3 .education-card img {
+            height: 230px;
+            width: 230px;
+        }
+
        
         }
 
