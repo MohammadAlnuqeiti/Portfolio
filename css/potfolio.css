@@ -48,6 +48,7 @@ header {
 }
 .dropdown {
     display: none;
+  
 }
 .dropdown .drop-content a {
     color: #00213a ;
